@@ -3,10 +3,14 @@ Hi! This project consist in make a Volleyball court fully operative with Point C
 
 Currently To Do's
 
-[ ] Add absolute to parent element of the players
-[ ] Make the court responsive (currently it takes all of the width when it gets small)
-[ ] Add the space for the Point Counter
-[ ] Implement JS for the Point Counter
-[ ] Add CSS animation for the displacement of the players
-[ ] Implement JS for the rotation system
+- [ ] Add absolute to parent element of the players
+- [ ] Make the court responsive (currently it takes all of the width when it gets small)
+- [ ] Add the space for the Point Counter
+- [ ] Implement JS for the Point Counter
+- [ ] Add CSS animation for the displacement of the players
+- [ ] Implement JS for the rotation system
 
+Work done
+
+- [x] Make the court
+- [x] Make the players
