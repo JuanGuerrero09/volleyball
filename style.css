@@ -17,6 +17,7 @@
 body{
     background-color: #0071BD;
     min-height: 100vh;
+    min-width: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,18 +50,95 @@ h1{
     text-align: center;
 }
 
+.first, .second{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .first{
-    position: relative;
-    left: 5%;
+    left: 0%;
 }
 
 .second{
-    position: relative;
-    right: 5%;
+    right: 0%;
 }
 
-.three, .six {
-    color: #0071BD;
-    margin: 3rem 6.5rem;
+.front, .back{
+    width: 35%;
+}
+
+
+.line{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.first > .back{
+    position: relative;
+    left: 15%;
+}
+
+.second > .back{
+    position: relative;
+    right: 15%;
+}
+
+
+
+.first .one, .first .six{
+    background-color: aliceblue;
+    animation-name: up;
+    animation-duration: 2s;
+    position: relative;
+}
+
+
+@keyframes up {
+    0%{top: 0%;}
+    100% {top: -33.3%}
+}
+
+.first .four, .first .three{
+    background-color: aliceblue;
+    animation-name: bottom;
+    animation-duration: 2s;
+    position: relative;
+}
+
+
+@keyframes bottom {
+    0%{bottom: 0%;}
+    100% {bottom: -33.3%}
+}
+
+
+.first .five{
+    background-color: aliceblue;
+    animation-name: right;
+    animation-duration: 2s;
+    position: relative;
+
+}
+
+@keyframes right {
+    0%{right: 0%;}
+    100% {right: -143.3%}
+}
+
+.first .two{
+    background-color: aliceblue;
+    animation-name: left;
+    animation-duration: 2s;
+    position: relative;
+
+}
+
+@keyframes left {
+    0%{left: 0%;}
+    100% {left: -143.3%}
 }
